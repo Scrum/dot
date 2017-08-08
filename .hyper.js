@@ -13,7 +13,7 @@ module.exports = {
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
 
-    // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
+    // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for 
     cursorShape: 'BLOCK',
 
     // set to true for blinking cursor
