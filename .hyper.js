@@ -5,15 +5,17 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 12,
+    fontSize: 16,
+
+    fontWeightBold: 'normal',
 
     // font family with optional fallbacks
-    fontFamily: '"Meslo LG M for Powerline", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Fira Code", "Meslo LG M for Powerline", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
 
-    // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for 
+    // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for â–ˆ
     cursorShape: 'BLOCK',
 
     // set to true for blinking cursor
@@ -32,7 +34,7 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: 'x-row > span {line-height: 16px;}',
+    termCSS: ``,
 
     // set to `true` (without backticks) if you're using a Linux setup that doesn't show native menus
     // default: `false` on Linux, `true` on Windows (ignored on macOS)
@@ -105,10 +107,19 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
+    // 'hyperpower',
     'hyperline',
     'hyperlinks',
-    'hyperpower',
-    'hyper-solarized-dark'
+    'hyperterm-atom-dark',
+    'hyper-ligatures',
+    "hyperblue-vibrancy", 
+    // "hyper-statusline", 
+    // "hyperterm-tab-icons", 
+    // "hyperterm-close-on-left", 
+    // "hyperterm-paste", 
+    "hypercwd", 
+    // "hypertitle"
+    // 'hyper-solarized-dark'
   ],
 
   // in development, you can create a directory under
